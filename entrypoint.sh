@@ -1,2 +1,4 @@
-source .env
-celery -A celery_app worker --loglevel=info
+#!/bin/bash
+
+echo "🚀 Iniciando Celery..."
+celery -A celery worker --loglevel=info

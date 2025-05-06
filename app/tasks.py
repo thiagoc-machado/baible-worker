@@ -12,6 +12,6 @@ def ping_huggingface_space():
             'Content-Type': 'application/json'
         }
         response = httpx.post(url, json=payload, headers=headers, timeout=10)
-        print(f'✅ Ping enviado ao HuggingFace: {response.status_code}')
+        print(f'✅ Ping enviado: {response.status_code}')
     except Exception as e:
-        print(f'❌ Erro ao pingar o HuggingFace: {e}')
+        print(f'❌ Erro ao pingar: {e}')
